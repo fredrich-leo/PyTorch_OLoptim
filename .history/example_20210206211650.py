@@ -8,16 +8,8 @@ import torch
 import torchvision
 from torch.utils.tensorboard import SummaryWriter
 
-from OLoptim.OSD import OSD
-from OLoptim.FTML import FTML
-from OLoptim.FTRL import FTRL_Proximal, FTRL_Linear
-from OLoptim.STORM import STORM
-from OLoptim.SGDOL import SGDOL_global
-from OLoptim.SGDPF import SGD_globLR, SGD_cordLR
-
-from OLscheduler.EXP3 import EXP3
-from OLscheduler.UCB import UCB
-
+import OLoptim
+import OLscheduler
 from OLutils import utils, models
 
 
